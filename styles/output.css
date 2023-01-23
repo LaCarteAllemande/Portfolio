@@ -1,5 +1,7 @@
 /*
+
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+
 */
 
 /*
@@ -30,6 +32,7 @@
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
+
 */
 
 html {
@@ -44,6 +47,7 @@ html {
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
+
 }
 
 /*
@@ -410,6 +414,7 @@ video {
   height: auto;
 }
 
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -458,6 +463,7 @@ video {
 }
 
 ::-webkit-backdrop {
+
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -567,9 +573,18 @@ video {
   z-index: 10;
 }
 
+
 .mx-16 {
   margin-left: 4rem;
   margin-right: 4rem;
+}
+
+.mt-96 {
+  margin-top: 24rem;
+}
+
+.mt-64 {
+  margin-top: 16rem;
 }
 
 .-ml-1 {
@@ -608,10 +623,6 @@ video {
   margin-top: 2rem;
 }
 
-.mt-64 {
-  margin-top: 16rem;
-}
-
 .ml-8 {
   margin-left: 2rem;
 }
@@ -622,34 +633,49 @@ video {
 
 .inline-block {
   display: inline-block;
+
 }
 
 .flex {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
 .h-screen {
   height: 100vh;
 }
+
 
 .h-4 {
   height: 1rem;
 }
 
+
 .min-h-full {
   min-height: 100%;
+}
+
+
+.w-full {
+  width: 100%;
 }
 
 .w-auto {
   width: auto;
 }
 
+
 .w-2 {
   width: 0.5rem;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .w-3\.5 {
@@ -664,6 +690,7 @@ video {
   width: 1rem;
 }
 
+
 .min-w-full {
   min-width: 100%;
 }
@@ -671,6 +698,7 @@ video {
 .max-w-none {
   max-width: none;
 }
+
 
 .scale-105 {
   --tw-scale-x: 1.05;
@@ -680,6 +708,11 @@ video {
 
 .cursor-default {
   cursor: default;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
 }
 
 .items-center {
@@ -706,19 +739,23 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+
 }
 
 .overflow-hidden {
   overflow: hidden;
 }
 
+
 .scroll-smooth {
   scroll-behavior: smooth;
 }
 
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
+
 
 .rounded-full {
   border-radius: 9999px;
@@ -743,10 +780,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
+
 
 .bg-purple-700 {
   --tw-bg-opacity: 1;
@@ -757,6 +796,7 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(3 5 21 / var(--tw-bg-opacity));
 }
+
 
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
@@ -806,6 +846,7 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+
 }
 
 .px-12 {
@@ -842,6 +883,7 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+
 }
 
 .text-center {
@@ -850,6 +892,7 @@ video {
 
 .text-justify {
   text-align: justify;
+
 }
 
 .text-2xl {
@@ -857,19 +900,21 @@ video {
   line-height: 2rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
 
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+
 }
 
 .text-xl {
@@ -877,10 +922,12 @@ video {
   line-height: 1.75rem;
 }
 
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+
 
 .font-bold {
   font-weight: 700;
@@ -898,14 +945,17 @@ video {
   font-style: italic;
 }
 
+
 .tracking-tight {
   letter-spacing: -0.025em;
 }
+
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
 
 .text-gray-500 {
   --tw-text-opacity: 1;
@@ -944,10 +994,12 @@ video {
   opacity: 0.25;
 }
 
+
 .blur-sm {
   --tw-blur: blur(4px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
+
 
 .blur-md {
   --tw-blur: blur(12px);
@@ -1103,10 +1155,6 @@ html {
   .xl\:px-96 {
     padding-left: 24rem;
     padding-right: 24rem;
-  }
-
-  .xl\:pt-48 {
-    padding-top: 12rem;
   }
 
   .xl\:text-xl {
