@@ -5,86 +5,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Nils Mittelhockamp</title>
   <link rel="stylesheet" href="./styles/output.css">
-  <link rel="icon" href="./assets/xo.png" type="image/x-icon">
+  <link rel="icon" href="./assets/sigm.webp" type="image/x-icon">
+
+
+
+
   <script src="./script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.js"
-    integrity="sha512-7cOf9RTSiTzxLfEZ4aFKpdTAM0rI/OSIcr9MEg7sLQoWaMxkCh0wmYDxJMJP8DVMtRC1WCVD6QD749PKZuaajw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.css"
-    integrity="sha512-joJLRX4chQYCQlk0R4FXEgZHqsWA1hf4e+C+QKyi8fnfDm8FlEsNAVo+ByQhD19BrgVZGSOJKAQZa5M5gXDtpQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="text/javascript" src="node_modules/fullpage.js/dist/fullpage.js"></script>
+  <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist/fullpage.css" />
+
+  <link rel="stylesheet" href="./styles/after.css">
 </head>
 
 
-
-
 <body onload="init()">
-
-
-  <main>
-
-
+  <main class="bg-[url('/assets/forest2.jpg')] bg-cover bg-center bg-no-repeat h-screen overflow-hidden text-white ">
     <div id="fullpage">
 
-
-
-
       <!--Header-->
-      <div class="section ">
+      <div class="section  backdrop-hue-rotate-30   backdrop-saturate-150">
+        <div class="flex items-center justify-center">
+          <h1 class="w-full text-center text-lg uppercase italic font-light">"Hey ! Take a look around, you may find my
+            resume and
+            some projects I'm working on."</h1>
+        </div>
 
-        <header class="relative flex items-center justify-center h-screen overflow-hidden ">
-          <div class="relative z-30 p-5 text-white bg-opacity-50 rounded-xl">
-            <h1 class="text-center uppercase font-bold text-2xl lg:text-4xl">Nils Mittelhockamp</h1>
-            <h2 class="lg:text-xl text-center"> 2nd year Computer Science student</h2>
-          </div>
+        <div class="absolute right-2 bottom-2">
+          <h2>Picture by <a class="italic underline" target="_blank"
+              href="https://www.pexels.com/@eberhardgross/">Eberhard Grossgasteiger</a></h2>
+        </div>
 
-          <div id="hey" class=" absolute text-center z-30 px-12 text-white  xl:mt-48 ">
-            <div class="pt-48 ">
-              <p class="text-normal lg:text-xl ">Hey I'm Nils, thank you for checking out my website. I like design
-                patterns and making music. </p>
-            </div>
-          </div>
-
-          <div id="navigation " class="z-30 absolute mt-96 w-full ">
-            <nav class=" text-3xl text-white uppercase font-bold mt-64">
-              <div class=" grid grid-cols-2 ">
-                <div class="flex items-center justify-center "> <a href="#resume"
-                    class="link link-underline link-underline-black navBtn hidden">Education & Experience</a></div>
-                <div class="flex items-center justify-center"> <a href="#projects"
-                    class="link link-underline link-underline-black navBtn hidden">projects</a></div>
-              </div>
-            </nav>
-          </div>
-
-
-          <!-- <img src="./assets/frame.jpg" class="absolute z-10 w-auto min-w-full min-h-full max-w-none blur-sm"> -->
-          <video id='video' data-keepplaying autoplay loop muted
-            class="absolute z-10 w-auto min-w-full min-h-full max-w-none blur-sm scale-105 opacity-100 ">
-            <source src="./assets/bg.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </header>
       </div>
+
 
       <!--Education-->
 
-      <div class="section bg-gradient-to-tr from-black via-[#010104] to-[#030515]  text-white " data-anchor="resume">
-        <div class="px-6 lg:px-32 lg:py-12 cursor-default">
+      <div class="section  backdrop-hue-rotate-30   backdrop-saturate-150" >
+        <div class="px-6 lg:px-32 lg:py-12 cursor-default ">
 
-          <h1 class="text-2xl lg:text-4xl font-bold text-center uppercase ">Education</h1>
+          <h1 class="text-2xl lg:text-4xl  text-center uppercase font-semibold">Education</h1>
 
           <ol class="border-l border-gray-300 lg:mt-20 xl:py-12">
             <li>
               <div class="flex flex-start items-center pt-3">
                 <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
-                <p class="text-gray-500 text-sm font-bold text-3xl">2024</p>
+                <p class="text-white text-sm font-bold ">2024</p>
               </div>
               <div class="mt-0.5 ml-4 mb-6">
-                <h4 class="text-white font-semibold text-lg lg:text-2xl ">Bachelor in Computer Science</h4>
-                <h5 class="text-gray-400 text-lg mb-1.5 ">University of Paris </h5>
+                <h4 class="text-white text-lg lg:text-2xl ">Bachelor in Computer Science</h4>
+                <h5 class="text-gray-300 text-base mb-1.5 ">University of Paris </h5>
 
               </div>
             </li>
@@ -93,22 +64,38 @@
             <li>
               <div class="flex flex-start items-center pt-20">
                 <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
-                <p class="text-gray-500 text-sm font-bold text-3xl">2021</p>
+                <p class="text-white text-sm font-bold ">2021</p>
               </div>
               <div class="mt-0.5 ml-4 mb-6">
-                <h4 class="text-white font-semibold text-lg lg:text-2xl ">French A Degree (Baccalauréat / Abitur)</h4>
-                <h5 class="text-gray-400 text-lg mb-1.5 ">College Leonard de Vincci in Levallois </h5>
+                <h4 class="text-white text-lg lg:text-2xl ">French A Degree (Baccalauréat / Abitur)</h4>
+                <h5 class="text-gray-300 text-base mb-1.5 ">College Leonard de Vincci in Levallois </h5>
 
               </div>
             </li>
           </ol>
         </div>
 
-      </div>
+
+                  </button>
+
+
+                  <button class="group overflow-hidden">
+                    <div class="group-focus:divide-y divide-gray-400 ">
+                      <h1 class="py-2 uppercase ">Typescript / JavaScript</h1>
+                      <div
+                        class="transition-height group-focus:duration-500 duration-500 ease-in-out h-0  group-focus:h-40 flex items-center px-2 overflow-hidden">
+                        <p
+                          class="break-words text-justify font-light  mx-auto text-sm opacity-0  transition  group-focus:opacity-100  group-focus:duration-500 duration-500 ease-in-out h-min">
+                          I learned TS on <a class="underline" target="_blank"
+                            href="https://www.tutorialspoint.com/typescript/index.htm">Tutorialspoint</a> and I prefer
+                          it to JavaScript for its security, eventhough I can also code in vanilla JS.</p>
+                      </div>
+                    </div>
 
       <!--About me -->
       <div class="section bg-white text-black">
 
+                  </button>
 
         <div class=" cursor-default xl:py-32">
 
@@ -133,12 +120,407 @@
           </p>
         </div>
 
+      </button>
+
+      <button class="group overflow-hidden">
+        <div class="group-focus:divide-y divide-gray-400 ">
+          <h1 class="py-2 uppercase ">AI</h1>
+          <div
+            class="transition-height group-focus:duration-500 duration-500 ease-in-out h-0  group-focus:h-40 flex items-center px-2 overflow-hidden">
+            <p
+              class="break-words text-justify font-light  mx-auto text-sm opacity-0  transition  group-focus:opacity-100  group-focus:duration-500 duration-500 ease-in-out h-min">
+              I'm planning to take the Unity course on AI during summer.</p>
+          </div>
+        </div>
+
+                  </button>
+
+                </article>
+
+
+                <!-- Fourth row -->
+
+                <div class="group-focus:divide-y divide-gray-400 ">
+
+
+                  </button>
+
+
+                  <button class="group overflow-hidden">
+                    <div class="group-focus:divide-y divide-gray-400 ">
+                      <h1 class="py-2 uppercase ">Typescript / JavaScript</h1>
+                      <div
+                        class="transition-height group-focus:duration-500 duration-500 ease-in-out h-0  group-focus:h-40 flex items-center px-2 overflow-hidden">
+                        <p
+                          class="break-words text-justify font-light  mx-auto text-sm opacity-0  transition  group-focus:opacity-100  group-focus:duration-500 duration-500 ease-in-out h-min">
+                          I learned TS on <a class="underline" target="_blank"
+                            href="https://www.tutorialspoint.com/typescript/index.htm">Tutorialspoint</a> and I prefer
+                          it to JavaScript for its security, eventhough I can also code in vanilla JS.</p>
+                      </div>
+                    </div>
+
+                    <div
+
+                  </button>
+
+                  <button class="group overflow-hidden">
+                    <div class="group-focus:divide-y divide-gray-400 ">
+                      <h1 class="py-2 uppercase ">AI</h1>
+                      <div
+                        class="transition-height group-focus:duration-500 duration-500 ease-in-out h-0  group-focus:h-40 flex items-center px-2 overflow-hidden">
+                        <p
+                          class="break-words text-justify font-light  mx-auto text-sm opacity-0  transition  group-focus:opacity-100  group-focus:duration-500 duration-500 ease-in-out h-min">
+                          I'm planning to take the Unity course on AI during summer.</p>
+                      </div>
+                    </div>
+
+                  </button>
+
+                </article>
+
+                <!-- Fourth row -->
+                <div class="sm:h-28 h-20 flex items-center text-xs">
+                  <article
+                  class="group h-full flex flex-col divide-y text-xs lg:text-sm text-center divide-gray-400 px-2 ">
+                  <div class="py-4 lg:py-6 uppercase  text-sm lg:text-base">cybersecurity</div>
+
+
+                  <button class="group overflow-hidden">
+                    <div class="group-focus:divide-y divide-gray-400 ">
+                      <h1 class="py-2 uppercase ">Pentesting</h1>
+                      <div
+                        class="transition-height group-focus:duration-500 duration-500 ease-in-out h-0  group-focus:h-40 flex items-center px-2 overflow-hidden">
+                        <p
+                          class="break-words text-justify font-light  mx-auto text-sm opacity-0  transition  group-focus:opacity-100  group-focus:duration-500 duration-500 ease-in-out h-min">
+                          I did a lot of pentesting with Kali when I was in college and I had a lot of networking
+                          courses in university. I'm training on HackTheBox.</p>
+                      </div>
+                    </div>
+
+                  </button>
+
+
+                  <button class="group overflow-hidden">
+                    <div class="group-focus:divide-y divide-gray-400 ">
+                      <h1 class="py-2 uppercase ">Cryptography</h1>
+                      <div
+                        class="transition-height group-focus:duration-500 duration-500 ease-in-out h-0  group-focus:h-40 flex items-center px-2 overflow-hidden">
+                        <p
+                          class="break-words text-justify font-light  mx-auto text-sm opacity-0  transition  group-focus:opacity-100  group-focus:duration-500 duration-500 ease-in-out h-min">
+                          I had a lot of courses in mathematics on cryptography (RSA/AES/Hill) and I'm training in my
+                          free time sometimes on CryptoHack.</p>
+                      </div>
+                    </div>
+
+                  </button>
+
+
+
+
+                </article>
+                <!-- <article class="group lg:border-l-0 sm:border-l border-l-0 h-full flex flex-col divide-y text-sm text-center divide-gray-400 px-2">
+                  <div class="sm:pb-8 pb-3 num">5</div>
+                  <div class="sm:py-3 py-1.5 uppercase font-light">Agota Kristof</div>
+                  <div class="sm:h-28 h-20 flex items-center text-xs">
+                    <p class="break-words font-light whitespace-pre-line mx-auto w-28">Code of conduct is just another rule to be broken</p>
+                  </div>
+                  <div class="sm:py-3 py-1.5 uppercase">Page 54</div>
+                  <div class="py-8 text-9xl relative">
+                    <q class="text-xs absolute sm:top-28 top-16 left-[8%] max-w-[84%]">
+                      “You don't want to fight the enemy anymore?"<br>"I don't want to fight anyone. I have no enemies. I want to go home.” 
+                    </q>
+    
+                </article> -->
+
+              </div>
+            </div>
+          </div>
+
+
+        <!--Arrows-->
+
+        </div>
+
       </div>
 
 
+
+      <!-- Projects-->
+      <div id="projects" class="section  backdrop-hue-rotate-30   backdrop-saturate-150">
+
+        <!--Arrows-->
+  
+        <button class="arrow arrow-l">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70px" height="80px"
+            viewBox="0 0 50 80" xml:space="preserve">
+            <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+            45.63,75.8 0.375,38.087 45.63,0.375 ">
+            </polyline>
+          </svg>
+        </button>
+  
+        <button class="arrow arrow-r">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70px" height="80px"
+            viewBox="0 0 50 80" xml:space="preserve">
+            <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+            0.375,0.375 45.63,38.087 0.375,75.8 ">
+        </polyline>
+          </svg>
+        </button>
+          <div class="slide ">
+            <div class="space-y-4 px-16">
+              <h1 class=" text-xl lg:text-3xl font-light text-center uppercase">Projects</h1>
+              <p class="font-light text-justify md:text-center text-normal lg:text-lg">You can find here some projects I have been working on lately and some technical information.</p>
+            </div>
+  
+          </div>
+  
+          <div class="slide w-full h-screen">
+  
+  
+            <div class=" flex  justify-center items-center overflow-hidden w-full h-screen">
+              <div>
+                <div
+                  class=" p-16 hover:scale-105 transition ease-in-out hover:shadow-lg hover:cursor-pointer delay-50 duration-300 h-full">
+                  <div class="space-y-4 lg:space-y-8">
+                    <div class="space-y-6 lg:space-y-12">
+                      <h1
+                        class="uppercase text-center text-xl lg:text-2xl transition ease-in-out font-light delay-50 duration-250  ">
+                        Hungry
+                      </h1>
+  
+  
+                      <p class="text-justify font-light text-sm lg:text-lg">Server and client application for libraries
+                        which allow them to manage reservations of books and documents
+                      </p>
+                    </div>
+                    <div class="space-y-2">
+                      <div class="w-full lang-section space-y-2">
+                      </div>
+                      <div class="space-y-2 ">
+                        <div class="text-right">
+                          <a class="font-light text-sm lg:text-base link link-underline github-link" target="_blank"
+                            href="https://github.com/LaCarteAllemande/LibraryServer">Check the code on
+                            Github</a> <i class='fas fa-external-link-alt'></i>
+                        </div>
+  
+  
+                      </div>
+                    </div>
+  
+  
+                  </div>
+  
+  
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="slide w-full h-screen">
+            <div class=" flex  justify-center items-center overflow-hidden w-full h-screen">
+              <div>
+                <div
+                  class=" p-16 hover:scale-105 transition ease-in-out hover:shadow-lg hover:cursor-pointer delay-50 duration-300 h-full">
+                  <div class="space-y-4 lg:space-y-8">
+                    <div class="space-y-6 lg:space-y-12">
+  
+                      <div class="space-y-2">
+                        <h1
+                          class="uppercase text-center text-xl lg:text-2xl transition ease-in-out font-light delay-50 duration-250  ">
+                          trading bot
+                        </h1>
+  
+                        <h2 class="text-center uppercase font-semibold">Python</h2>
+                      </div>
+  
+  
+  
+                      <p class="text-justify font-light text-sm lg:text-lg">Cryptocurrency trading bot which uses
+                        Binance's API and the <span class="font-semibold">CCXT</span> library.
+                      </p>
+                    </div>
+                  </div>
+  
+  
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+  
+          <div class="slide w-full h-screen">
+  
+  
+            <div class=" flex  justify-center items-center overflow-hidden w-full h-screen">
+              <div>
+                <div
+                  class=" p-16 hover:scale-105 transition ease-in-out hover:shadow-lg hover:cursor-pointer delay-50 duration-300 h-full">
+                  <div class="space-y-4 lg:space-y-8">
+                    <div class="space-y-6 lg:space-y-12">
+                      <h1
+                        class="uppercase text-center text-xl lg:text-2xl transition ease-in-out font-light delay-50 duration-250  ">
+                        Library Server
+                      </h1>
+  
+  
+                      <p class="text-justify font-light text-sm lg:text-lg">Server and client application for a library
+                        which allow to manage reservations of books and documents
+                      </p>
+                    </div>
+                    <div class="space-y-2">
+                      <div class="w-full lang-section space-y-2">
+                      </div>
+                      <div class="space-y-2 ">
+                        <div class="text-right">
+                          <a class="font-light text-sm lg:text-base link link-underline github-link" target="_blank"
+                            href="https://github.com/LaCarteAllemande/LibraryServer">Check the code on
+                            Github</a> <i class='fas fa-external-link-alt'></i>
+                        </div>
+  
+  
+                      </div>
+                    </div>
+  
+  
+                  </div>
+  
+  
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+  
+          <div class="slide w-full h-screen">
+  
+  
+            <div class=" flex  justify-center items-center overflow-hidden w-full h-screen">
+              <div>
+                <div
+                  class=" p-16 hover:scale-105 transition ease-in-out hover:shadow-lg hover:cursor-pointer delay-50 duration-300 h-full">
+                  <div class="space-y-4 lg:space-y-8">
+                    <div class="space-y-6 lg:space-y-12">
+                      <h1
+                        class="uppercase text-center text-xl lg:text-2xl transition ease-in-out font-light delay-50 duration-250  ">
+                        Criel-sur-mer
+                      </h1>
+  
+  
+                      <p class="text-justify font-light text-sm lg:text-lg">Rework of the website of a small town for a
+                        university project with the <span class="font-semibold">Tailwind</span> framework.
+                      </p>
+                    </div>
+                    <div class="space-y-2">
+                      <div class="w-full lang-section space-y-2">
+                      </div>
+                      <div class="space-y-2 ">
+                        <div class="text-right">
+                          <a class="font-light text-sm lg:text-base link link-underline github-link" target="_blank"
+                            href="https://github.com/stoptexting/criel-sur-mer-website-rework">Check the code on
+                            Github</a> <i class='fas fa-external-link-alt'></i>
+                        </div>
+  
+  
+                      </div>
+                    </div>
+  
+  
+                  </div>
+  
+  
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+  
+          <div class="slide w-full h-screen">
+            <div class=" flex  justify-center items-center overflow-hidden w-full h-screen">
+              <div>
+                <div
+                  class=" p-16 hover:scale-105 transition ease-in-out hover:shadow-lg hover:cursor-pointer delay-50 duration-300 h-full">
+                  <div class="space-y-4 lg:space-y-8">
+                    <div class="space-y-6 lg:space-y-12">
+  
+                      <div class="space-y-2">
+                        <h1
+                          class="uppercase text-center text-xl lg:text-2xl transition ease-in-out font-light delay-50 duration-250  ">
+                          Bach
+                        </h1>
+  
+                        <h2 class="text-center uppercase font-semibold">Java</h2>
+                      </div>
+  
+  
+  
+                      <p class="text-justify font-light text-sm lg:text-lg">Musical chord progression generator.
+                      </p>
+                    </div>
+                  </div>
+  
+  
+                </div>
+              </div>
+  
+            </div>
+          </div>
+          <div class="slide w-full h-screen">
+  
+  
+  
+            <div class=" flex  justify-center items-center overflow-hidden w-full h-screen">
+              <div>
+                <div
+                  class=" p-16 hover:scale-105 transition ease-in-out hover:shadow-lg hover:cursor-pointer delay-50 duration-300 h-full">
+                  <div class="space-y-4 lg:space-y-8">
+                    <div class="space-y-6 lg:space-y-12">
+                      <h1
+                        class="uppercase text-center text-xl lg:text-2xl transition ease-in-out font-light delay-50 duration-250  ">
+                        sampl
+                      </h1>
+  
+  
+                      <p class="text-justify font-light text-sm lg:text-lg">Desktop application with a GUI intended
+                        for music producers to download the audio of a Youtube video.
+                      </p>
+                    </div>
+                    <div class="space-y-2">
+                      <div class="w-full lang-section space-y-2">
+                      </div>
+                      <div class="space-y-2 ">
+                        <div class="text-right">
+                          <a class="font-light text-sm lg:text-base link link-underline github-link" target="_blank"
+                            href="https://github.com/LaCarteAllemande/Sampl">Check the code on
+                            Github</a> <i class='fas fa-external-link-alt'></i>
+                        </div>
+  
+  
+                      </div>
+                    </div>
+  
+  
+                  </div>
+  
+  
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+  
+  
+        </div>
+
+
       <!-- Experience -->
-      <div class="section bg-gradient-to-bl from-black via-[#010104] to-[#030515]  text-white">
-        <div class="px-6 lg:px-32 lg:py-12 cursor-default">
+      <div class="section  backdrop-hue-rotate-30   backdrop-saturate-150">
+        <div class="px-6 lg:px-32 lg:py-12 cursor-default text-white">
 
           <h1 class="text-2xl lg:text-4xl font-bold text-center uppercase ">Experience</h1>
 
@@ -146,13 +528,14 @@
             <li>
               <div class="flex flex-start items-center pt-3">
                 <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
-                <p class="text-gray-500 text-sm font-bold text-3xl">Summer 2022</p>
+                <p class="text-white text-sm font-bold ">Summer 2022</p>
               </div>
               <div class="mt-0.5 ml-4 mb-6">
-                <h4 class="text-white font-semibold text-lg lg:text-2xl ">Receptionist at the <a class="  italic"
-                    target="_blank" href="https://www.marriott.fr/hotels/travel/parmd-le-meridien-etoile/"> Méridien
+                <h4 class="text-white font-semibold text-lg lg:text-2xl ">Receptionist at the <a
+                    class=" link link-underline italic" target="_blank"
+                    href="https://www.marriott.fr/hotels/travel/parmd-le-meridien-etoile/"> Méridien
                     Etoile</a></h4>
-                <h5 class="text-gray-400 text-lg mb-1.5 ">4-star hotel in Paris </h5>
+                <h5 class="text-gray-300 text-lg mb-1.5 ">4-star hotel in Paris </h5>
 
               </div>
             </li>
@@ -161,11 +544,11 @@
             <li>
               <div class="flex flex-start items-center pt-20">
                 <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
-                <p class="text-gray-500 text-sm font-bold text-3xl">2018</p>
+                <p class="text-white text-sm font-bold ">June 2018</p>
               </div>
               <div class="mt-0.5 ml-4 mb-6">
                 <h4 class="text-white font-semibold text-lg lg:text-2xl ">Internship at Waymel</h4>
-                <h5 class="text-gray-400 text-lg mb-1.5 ">Post-production compagny for documentaries </h5>
+                <h5 class="text-gray-300 text-lg mb-1.5 ">Post-production compagny for documentaries </h5>
 
               </div>
             </li>
@@ -173,171 +556,122 @@
         </div>
       </div>
 
+      <!--Soft skills-->
+      <div class="section">
+        <div class=" h-screen flex justify-center items-center">
+
+          <div class="grid grid-cols-3 gap-2 lg:gap-4 h-full w-full overflow-hidden backdrop-hue-rotate-60">
 
 
-
-      <!-- Skills -->
-      <section class="section fp-auto-height-responsive">
-
-        <div class=" lg:grid lg:grid-cols-3">
-
-          <div class="relative flex items-center justify-center overflow-hidden bg-black h-screen">
-
-            <div id="skillsImage"
-              class=" absolute z-10 w-auto min-w-full min-h-full hover:scale-110 hover:opacity-90  hover:blur-sm transition duration-400 ease-in-out opacity-20 transition duration-300 ease-in-out "
-              style="background-image: url(./assets/waterfall.jpg)">
-
-            </div>
-
-            <div class="pt-8 z-30">
-              <p class="text-white text-3xl font-bold uppercase">conscientious</p>
-
-
-            </div>
-            <div></div>
-            <p class="z-30 text-white text-xl mt-64 absolute opacity-100 mx-16 text-justify">I take my job and my tasks
-              very seriously. I like being challenged and perform with what I am doing by trying to surpass myself. </p>
-
-
-          </div>
-
-          <div class="relative flex items-center justify-center overflow-hidden bg-black h-screen">
-
-            <div id="skillsImage"
-              class=" absolute z-10 w-auto min-w-full min-h-full hover:scale-110 hover:opacity-90  hover:blur-sm transition duration-400 ease-in-out opacity-20 transition duration-300 ease-in-out bg-purple-700"
-              style="background-image: url(./assets/forest.jpg)">
-
-            </div>
-
-            <div class="pt-8 z-30">
-              <p class="text-white text-3xl font-bold uppercase">Versatile</p>
-
-
-            </div>
-
-            <p class="z-30 text-white text-xl mt-64 absolute opacity-100 mx-16 text-justify">During my studies and my
-              profesionnal career, I always needed to adapt quickly to new envirronmeents and always like the challenge
-              of it. </p>
-
-
-          </div>
-
-
-
-          <div class="relative flex items-center justify-center h-screen overflow-hidden bg-black h-screen">
             <div
-              class="absolute z-10 w-auto min-w-full min-h-full max-w-none hover:scale-110 hover:opacity-90  hover:blur-sm transition duration-400 ease-in-out opacity-20 transition duration-300 ease-in-out bg-purple-700"
-              style="background-image: url(./assets/auvergne.jpg)">
-            </div>
-            <div class="pt-8 z-30">
-              <p class="text-white text-3xl font-bold uppercase">creative</p>
+              class="z-30 overflow-hidden group hover:cursor-default  scale-100 hover:scale-105 backdrop-brightness-100 hover:backdrop-brightness-105 transition ease-in-out  delay-50 duration-250">
+              <div class="flex items-center justify-center w-full h-full">
+                <div class="lg:space-y-6 space-y-2 w-full ">
+                  <h2
+                    class="uppercase text-center font-light lg:text-2xl transition ease-in-out  delay-50 duration-250  ">
+                    langages</h2>
+                  <div class="lg:grid lg:grid-cols-3 w-full space-y-1 lg:space-y-0">
+                    <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-150 space-y-0">
+                      <h2 class="uppercase font-light text-center text-xs lg:text-lg">french <span class="border border-white font-thin p-1 hover:cursor-pointer hover:backdrop-hue-rotate-180"> C2 </span>
+                    </div>
+                    <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-500">
+                      <h2 class="uppercase font-light text-center text-xs lg:text-lg">English <span class="border border-white font-thin p-1 hover:cursor-pointer hover:backdrop-hue-rotate-180"> C2 </span>
+                    </div>
+
+                    <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-1000">
+                      <h2 class="uppercase font-light text-center text-xs lg:text-lg">German <span class="border border-white font-thin p-1 hover:cursor-pointer hover:backdrop-hue-rotate-180"> C1 </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <p class="z-30 text-white text-xl mt-64 absolute opacity-100 mx-16 text-justify">
-              Besides Computer Science, I love making music and I'm also interestd in everything related to art and
-              design, which helped me resolving technical problems during my studies.
+            <div
+              class="z-0 overflow-hidden group  hover:cursor-default  scale-100 hover:scale-105 backdrop-brightness-100 hover:backdrop-brightness-105 transition ease-in-out  delay-50 duration-250">
+              <div class="flex items-center justify-center w-full h-full">
+                <div class="lg:space-y-6 space-y-2 w-full ">
+                  <h2
+                    class="uppercase text-center font-light lg:text-2xl transition ease-in-out  delay-50 duration-250  ">
+                    soft-skills</h2>
+                  <div class="lg:grid lg:grid-cols-3 w-full space-y-1 lg:space-y-0">
+                    <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-150 space-y-0">
+                      <h2 class="uppercase font-light text-center text-xs lg:text-lg">Teamwork</h2>
+                    </div>
+                    <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-500">
+                      <h2 class="uppercase font-light text-center text-xs lg:text-lg">Versatile</h2>
+                    </div>
+
+                    <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-1000">
+                      <h2 class="uppercase font-light text-center text-xs lg:text-lg">rigorous</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="overflow-hidden group hover:cursor-default  scale-100 hover:scale-105 backdrop-brightness-100 hover:backdrop-brightness-105 transition ease-in-out  delay-50 duration-250">
+              <div class="flex items-center justify-center w-full h-full">
+                <div class="lg:space-y-6 space-y-2 w-full ">
+                  <h2
+                    class="uppercase text-center font-light lg:text-2xl transition ease-in-out  delay-50 duration-250  ">
+                    passions</h2>
+                  <div class="lg:grid lg:grid-cols-3 w-full space-y-1 lg:space-y-0">
+                    <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-150 space-y-0">
+                      <h2 class="uppercase font-light text-center text-xs lg:text-lg">music production</h2>
+                    </div>
+                    <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-500">
+                      <h2 class="uppercase font-light text-center text-xs lg:text-lg">soccer</h2>
+                    </div>
+
+                    <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-1000">
+                      <h2 class="uppercase font-light text-center text-xs lg:text-lg">movies</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+      <!--About me -->
+      <div 
+        class="section  backdrop-hue-rotate-60 backdrop-saturate-100 overflow-hidden justify-normal">
+
+        <div class=" cursor-default xl:py-32 h-screen w-full flex items-center justify-center">
+          <div>
+            <h1 class="text-2xl lg:text-4xl font-semibold text-center uppercase">About me</h1>
+
+            <p
+              class="font-light lg:text-xl text-justify px-12 lg:px-48 xl:px-96 2xl:mx-48 lg:mt-20 mt-8 tracking-tight ">
+              I'm passionate about technology and in particulay about <span class="font-normal">A.I</span>, <span
+                class="font-normal">Programming</span>, and <span class="font-normal">Cybersecurity</span>. I'm
+              curious about every field in which theses technologies can be useful and
+              beside Computer Science, I have a strong interest in mathematics, in economics and I'm always
+              curious to learn new things.
+              I enjoy making music, working out and learning stuff in my free time.
             </p>
-
           </div>
-
 
         </div>
 
-      </section>
-
-
-
-
-      <!--Projects-->
-      <div class="section ">
-
-        <div class="relative flex h-screen overflow-hidden flex items-center justify-center h-screen bg-[#030515]">
-
-          <div class="space-y-8 xl:space-y-20 py-4 z-30 w-full  ">
-
-            <div class=" flex justify-center items-center w-full">
-
-                <div class="space-y-2 lg:space-y-8 ">
-                  <div >
-                    <h1 class="text-2xl lg:text-4xl font-bold uppercase tracking-tight text-center text-white "> Sampl
-                    </h1>
-                    <h2 class="text-lg lg:text-2xl uppercase font-semibold tracking-tight text-center text-gray-400">
-                      Python </h2>
-
-                  </div>
-                  
-                  <div class="px-12">
-                    <p class=" text-base  xl:text-xl text-white text-justify">
-                      Open-source Youtube/Soundcloud downloader with a GUI interface intended for music producers. </p>
-                    <button
-                      class="link link-underline link-underline-black text-base xl:text-lg text-[#8cb1f3] ml-8 xl:ml-16">
-                      <a target="_blank" href="https://github.com/LaCarteAllemande/Sampl">Click here to see on
-                        Github</a> </button>
-                  </div>
-
-                </div>
-            </div>
-
-            <div class=" flex justify-center items-center w-full">
-
-              <div class="space-y-2 lg:space-y-8 ">
-                <div >
-                  <h1 class="text-2xl lg:text-4xl font-bold uppercase tracking-tight text-center text-white ">Trading
-                    bot
-                  </h1>
-                  <h2 class="text-lg lg:text-2xl uppercase font-semibold tracking-tight text-center text-gray-400">
-                    Python/CCXT </h2>
-
-                </div>
-                
-                <div class="px-12">
-                  <p class=" text-base  xl:text-xl text-white text-justify">
-                    Cryptocurrency trading bot which uses Binance's API. Not ready yet. </p>
-                    <h2 class="text-red-600 font-semibold text-lg ml-8 xl:ml-16">Not open-source</h2>
-                </div>
-
-              </div>
-          </div>
-
-
-          <div class=" flex justify-center items-center w-full">
-
-            <div class="space-y-2 lg:space-y-8 ">
-              <div >
-                <h1 class="text-2xl lg:text-4xl font-bold uppercase tracking-tight text-center text-white "> Discipline
-                </h1>
-                <h2 class="text-lg lg:text-2xl uppercase font-semibold tracking-tight text-center text-gray-400">
-                  C++/QT </h2>
-
-              </div>
-              
-              <div class="px-12">
-                <p class=" text-base  xl:text-xl text-white text-justify">
-                  Desktop application to stay disiplined and to help you achieve your goals. Written with the QT Framework. </p>
-                <button
-                  class="link link-underline link-underline-black text-base xl:text-lg text-[#8cb1f3] ml-8 xl:ml-16">
-                  <a target="_blank" href="https://github.com/LaCarteAllemande/Tate">Click here to see on
-                    Github</a> </button>
-              </div>
-
-            </div>
-        </div>
-          </div>
-
-
-          <img src="./assets/coding 2.jpg"
-            class="absolute z-10 w-auto min-w-full min-h-full max-w-none blur-md scale-105 opacity-25  contrast-150">
-        </div>
       </div>
 
 
 
       <div class="section fp-auto-height">
-        <footer class="bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white py-12">
+        <footer class="bg-gradient-to-bl from-black via-[#010104] to-[#030515] text-white py-12">
           <div class="space-y-4">
             <div>
               <h3 class="text-center font-bold text-xl "> Nils Mittelhockamp - 2023</h3>
-              <h4 class="text-center  text-base ">  nmittel <span>at</span> protonmail.com</h4>
+              <h4 class="text-center  text-base "> nmittel <span>at</span> protonmail.com</h4>
             </div>
 
             <div class="inline-block flex items-center justify-center">
@@ -367,20 +701,12 @@
       </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
   </main>
 
 
-
+  <!-- <div class="absolute flex items-center justify-center w-full h-full z-60">
+    <img src="./assets/0467dd168ac6cf278aa413dd8a5b54dc-2438296831.jpg" class="absolute z-60 w-full h-full ">
+  </div> -->
 </body>
 
 </html>

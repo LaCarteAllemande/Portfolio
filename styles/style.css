@@ -3,14 +3,36 @@
 @tailwind utilities;
 
 
+@layer components {
+  .arrow{
+    @apply hidden lg:block hover:cursor-pointer z-50 absolute top-1/2 -mt-11 hover:scale-110 transition ease-in-out duration-200 ;
+  }
+
+  .arrow-r{
+    @apply right-12;
+  }
+
+  .arrow-l{
+    @apply left-12;
+  }
+}
+
+@media (max-width: 	1280px){
+  .arrow > svg {
+      width: 40px;
+    }
+}
+
 html {
   scroll-behavior: smooth;
 }
 
+
+
 .link-underline {
     border-bottom-width: 0;
     background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
-    background-size: 0 3px;
+    background-size: 0 2px;
     background-position: 0 100%;
     background-repeat: no-repeat;
     transition: background-size .5s ease-in-out;
@@ -21,9 +43,11 @@ html {
   }
   
   .link-underline:hover {
-    background-size: 100% 3px;
+    background-size: 100% 2px;
     background-position: 0 100%
   }
+
+
 
   .flipV {
     transform: scale(1, -1);
@@ -44,5 +68,30 @@ html {
     background-attachment: fixed;
   }
 
+  .btn-dropdown {
+    position: relative;
+    cursor: pointer;
+    padding: 8px 16px;
+    border: 1px solid gray;
+  }
   
+  .dropdown-content-container {
+    overflow-y: hidden;
+    max-height: 0;
+    transition: all 0.25s;
+  }
+  
+  .btn-dropdown.open>.dropdown-content-container {
+    max-height: 120px;
+    transition: all 0.4s;
+  }
 
+
+
+  
+  /* main {
+    background-image: url('../assets/0467dd168ac6cf278aa413dd8a5b54dc-2438296831.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: saturate(0%);
+    } */

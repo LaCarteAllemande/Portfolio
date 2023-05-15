@@ -1,0 +1,23 @@
+
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+  background:white;
+}
+
+.fp-slidesNav > ul{
+	width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 	1080px){
+  #fp-nav {
+    display: none;
+    }
+}
+
+
+/* Excluding bullet for the last section */
+#fp-nav li:last-child{
+  display: none;
+}
