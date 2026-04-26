@@ -9,13 +9,14 @@ function init() {
 
     
     new fullpage('#fullpage', {
+        licenseKey: 'gplv3-license',
         autoScrolling: true,
         scrollHorizontally: true,
         navigation:true,
         slidesNavigation:true,
         slidesNavPosition:"bottom",
         showActiveTooltip:true,
-        anchors:['hey', 'education', 'hardskills', 'project-section', 'experience', 'softskills', 'about', 'contact'],
+        anchors:['home', 'education', 'experience', 'hardskills', 'project-section', 'softskills', 'about', 'contact'],
 
         controlArrows: false,
         afterRender: function() {
@@ -39,14 +40,14 @@ function init() {
     });
 
 
-    let introText = document.getElementById("intro")
+    // let introText = document.getElementById("intro")
     projectsUrls = getProjectsUrl()
     
     for (var projectUrl in projectsUrls){
-        updateGithubDiv(generateLangageUrl(projectsUrls[projectUrl]), projectUrl)
-    }
+         updateGithubDiv(generateLangageUrl(projectsUrls[projectUrl]), projectUrl)
+     }
 
-    fadeIn(introText, 300)
+    // fadeIn(introText, 300)
 
 
 

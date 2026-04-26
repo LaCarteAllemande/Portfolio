@@ -86,12 +86,9 @@ html {
     transition: all 0.4s;
   }
 
+  .transition-height {
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
 
 
   
-  /* main {
-    background-image: url('../assets/0467dd168ac6cf278aa413dd8a5b54dc-2438296831.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    filter: saturate(0%);
-    } */
