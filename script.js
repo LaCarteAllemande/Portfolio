@@ -43,9 +43,9 @@ function init() {
     // let introText = document.getElementById("intro")
     projectsUrls = getProjectsUrl()
     
-    for (var projectUrl in projectsUrls){
-         updateGithubDiv(generateLangageUrl(projectsUrls[projectUrl]), projectUrl)
-     }
+    // for (var projectUrl in projectsUrls){
+    //      updateGithubDiv(generateLangageUrl(projectsUrls[projectUrl]), projectUrl)
+    //  }
 
     // fadeIn(introText, 300)
 
