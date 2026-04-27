@@ -1,4 +1,4 @@
-const OPACITY_STEP = 100;
+const OPACITY_STEP = 25;
 FIRST_TIMEOUT = 800;
 SECOND_TIMEOUT = 4000;
 MINIMUM_PERCENTAGE_OF_LANGAGE = 5
@@ -9,12 +9,14 @@ function init() {
 
     
     new fullpage('#fullpage', {
+        licenseKey: 'gplv3-license',
         autoScrolling: true,
         scrollHorizontally: true,
         navigation:true,
         slidesNavigation:true,
         slidesNavPosition:"bottom",
         showActiveTooltip:true,
+        anchors:['home', 'education', 'experience', 'hardskills', 'project-section', 'softskills', 'about', 'contact'],
 
         controlArrows: false,
         afterRender: function() {
@@ -37,11 +39,15 @@ function init() {
         
     });
 
+
+    // let introText = document.getElementById("intro")
     projectsUrls = getProjectsUrl()
     
-    for (var projectUrl in projectsUrls){
-        updateGithubDiv(generateLangageUrl(projectsUrls[projectUrl]), projectUrl)
-    }
+    // for (var projectUrl in projectsUrls){
+    //      updateGithubDiv(generateLangageUrl(projectsUrls[projectUrl]), projectUrl)
+    //  }
+
+    // fadeIn(introText, 300)
 
 
 
@@ -64,7 +70,6 @@ function getProjectsUrl(){
 }
 function updateGithubDiv(projectsUrl, indexOfPage){
     var xhr = new XMLHttpRequest();
-    console.log(projectsUrl)
     xhr.open("GET", projectsUrl);
     xhr.setRequestHeader("Accept", "application/vnd.github.v3+json");
 
@@ -167,7 +172,6 @@ async function fadeIn(element, timeout) {
 async function fadeOut(element, timeout) {
     await new Promise(r => setTimeout(r, timeout));
     for (i = 0; i <= 1; i=i+0.01) {
-        console.log(1 - i);
         element.style.opacity = 1 - i ;
         await new Promise(r => setTimeout(r, 1));
     }

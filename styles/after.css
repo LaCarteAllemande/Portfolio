@@ -21,3 +21,7 @@
 #fp-nav li:last-child{
   display: none;
 }
+
+#soft-skills > div{
+  height: 100%;
+}
