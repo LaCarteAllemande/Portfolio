@@ -1,687 +1,1053 @@
 <!DOCTYPE html>
 
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      href="./assets/the-bay-of-naples-at-moonlight-night-vesuvius-ivan-aivazovsky-1840-4059667448.jpg"
+      type="image/x-icon"
+    />
 
-  <link rel="icon" href="./assets/sigm.webp" type="image/x-icon">
+    <!-- FullPage FIRST -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/fullpage.js/dist/fullpage.css"
+    />
 
-  <!-- FullPage FIRST -->
-  <link rel="stylesheet" href="./node_modules/fullpage.js/dist/fullpage.css" />
+    <!-- Your styles -->
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link rel="stylesheet" href="./styles/after.css" />
 
-  <!-- Your styles -->
-  <link rel="stylesheet" href="./styles/output.css">
-  <link rel="stylesheet" href="./styles/after.css">
+    <!-- JS (deferred = HUGE perf gain) -->
+    <script defer src="./node_modules/fullpage.js/dist/fullpage.js"></script>
+    <script defer src="./script.js"></script>
 
-  <!-- JS (deferred = HUGE perf gain) -->
-  <script defer src="./node_modules/fullpage.js/dist/fullpage.js"></script>
-  <script defer src="./script.js"></script>
-</head>
+    <title>Nils M - Portfolio</title>
+  </head>
 
+  <body onload="init()">
+    <main
+      class="bg-cover bg-center bg-no-repeat h-screen overflow-hidden text-white"
+      style="background-image: url('./assets/painting.jpg')"
+    >
+      <div id="fullpage" class=" ">
+        <!--Header-->
+        <div class="section">
+          <div class="flex items-center justify-center min-h-screen">
+            <div class="w-full">
+              <div class="absolute left-1/3">
+                <ul
+                  class="space-y-2 list-[upper-roman] text-white/80 tracking-widest uppercase text-md lg:text-md"
+                >
+                  <li class="hover:text-white transition-colors cursor-pointer">
+                    <a href="#education">Education</a>
+                  </li>
 
-<body onload="init()">
-  <main class="bg-cover bg-center bg-no-repeat h-screen overflow-hidden text-white  "
-    style="background-image: url('./assets/painting.jpg')">
-    <div id="fullpage" class=" ">
+                  <li class="hover:text-white transition-colors cursor-pointer">
+                    <a href="#experience">Experience</a>
+                  </li>
 
+                  <li class="hover:text-white transition-colors cursor-pointer">
+                    <a href="#hardskills">Hard Skills</a>
+                  </li>
 
-      <!--Header-->
-      <div class="section ">
-        <div class="flex items-center justify-center min-h-screen  ">
-          <div class="w-full   ">
-            <div class="absolute left-1/3">
-              <ul class="space-y-2 list-[upper-roman] text-white/80 tracking-widest uppercase text-md lg:text-md">
-                <li class="hover:text-white transition-colors cursor-pointer">
-                  <a href="#education">Education</a>
+                  <li class="hover:text-white transition-colors cursor-pointer">
+                    <a href="#project-section">Projects</a>
+                  </li>
 
-                </li>
-
-                <li class="hover:text-white transition-colors cursor-pointer">
-                  <a href="#experience">Experience</a>
-                </li>
-
-                <li class="hover:text-white transition-colors cursor-pointer">
-                  <a href="#hardskills">Hard Skills</a>
-
-                </li>
-
-                <li class="hover:text-white transition-colors cursor-pointer">
-                  <a href="#project-section">Projects</a>
-
-                </li>
-
-                <li class="hover:text-white transition-colors cursor-pointer">
-                  Soft Skills
-                </li>
-
-                <li class="hover:text-white transition-colors cursor-pointer">
-                  About Me
-                </li>
-
-              </ul>
+                  <li class="hover:text-white transition-colors cursor-pointer">
+                    <a href="#softskills">Soft Skills</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+
+          <div class="absolute right-2 bottom-2">
+            <h2 class="text-sm md:text-base italic">
+              The monastery of George. Cape Fiolent (1846) - Ivan Aivazovsky
+            </h2>
           </div>
         </div>
 
+        <!--Education-->
 
-        <div class="absolute right-2 bottom-2">
-          <h2 class="text-sm md:text-base italic">The monastery of George. Cape Fiolent (1846) - Ivan Aivazovsky</h2>
+        <div class="section">
+          <div class="px-6 lg:px-32 lg:py-12 cursor-default">
+            <h1
+              class="text-2xl lg:text-4xl text-center uppercase font-light tracking-[0.1em] text-shadow-md text-white/90"
+            >
+              Education
+            </h1>
+            <ol class="border-l border-gray-300 mt-8 lg:mt-20 py-4 xl:py-12">
+              <li>
+                <div class="flex flex-start items-center pt-4">
+                  <div
+                    class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"
+                  ></div>
+                  <p class="text-white text-sm font-bold">2026</p>
+                </div>
+                <div class="mt-0.5 ml-4 mb-6">
+                  <h4 class="text-white text-lg lg:text-2xl">
+                    Master in Computer Science and Applied Mathematics
+                    <span class="font-light text-base lg:text-xl"
+                      >(Diplôme d'ingénieur)</span
+                    >
+                  </h4>
+                  <a
+                    class="text-gray-300 text-base mb-1.5"
+                    href="https://ensimag.grenoble-inp.fr/"
+                    target="_blank"
+                    >ENSIMAG</a
+                  >
+                </div>
+              </li>
+
+              <li>
+                <div class="flex flex-start items-center pt-4 lg:pt-14">
+                  <div
+                    class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"
+                  ></div>
+                  <p class="text-white text-sm font-bold">2023</p>
+                </div>
+                <div class="mt-0.5 ml-4 mb-6">
+                  <h4 class="text-white text-lg lg:text-2xl">
+                    Bachelor in Computer Science
+                  </h4>
+                  <a
+                    class="text-gray-300 text-base mb-1.5"
+                    href="https://iutparis-seine.u-paris.fr/"
+                    target="_blank"
+                  >
+                    University of Paris Descartes</a
+                  >
+                </div>
+              </li>
+
+              <li>
+                <div class="flex flex-start items-center pt-4 lg:pt-14">
+                  <div
+                    class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"
+                  ></div>
+                  <p class="text-white text-sm font-bold">2021</p>
+                </div>
+                <div class="mt-0.5 ml-4 lg:mb-6">
+                  <h4 class="text-white text-lg lg:text-2xl">
+                    French A Level -
+                    <span class="break-normal">High school diploma</span>
+                    <span class="font-light text-base lg:text-xl"
+                      >(Baccalauréat / Abitur)</span
+                    >
+                  </h4>
+                  <h5 class="text-gray-300 text-base mb-1.5">
+                    Lycée Leonard de Vincci in Levallois
+                  </h5>
+                </div>
+              </li>
+            </ol>
+          </div>
         </div>
 
-      </div>
+        <!-- Experience -->
+        <div class="section">
+          <div class="px-6 lg:px-32 lg:py-12 cursor-default text-white">
+            <h1
+              class="text-2xl lg:text-4xl text-center uppercase font-light tracking-[0.1em] text-shadow-md text-white/90"
+            >
+              Experience
+            </h1>
 
+            <ol class="border-l border-gray-300 mt-8 lg:mt-20 py-4 xl:py-10">
+              <li>
+                <div class="flex flex-start items-center pt-4 lg:pt-14">
+                  <div
+                    class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"
+                  ></div>
+                  <p class="text-white text-sm">
+                    September 2023 - September 2026
+                  </p>
+                </div>
+                <div class="mt-0.5 ml-4 mb-6">
+                  <h4 class="text-white font-semibold text-lg lg:text-2xl">
+                    Cyber Security engineer <span class="font-normal">at</span>
+                    <a
+                      target="_blank"
+                      class="link link-underline"
+                      href="https://www.mobility.siemens.com/global/en.html"
+                      >Siemens Mobility</a
+                    >
+                    <span class="font-light text-white/80 text-md"
+                      >as Work-study trainee</span
+                    >
+                  </h4>
+                  <h5 class="text-gray-300 text-lg mb-1.5">CBTC system</h5>
+                </div>
+              </li>
 
-      <!--Education-->
+              <li>
+                <div class="flex flex-start items-center pt-4 lg:pt-14">
+                  <div
+                    class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"
+                  ></div>
+                  <p class="text-white text-sm">April 2023 - July 2023</p>
+                </div>
+                <div class="mt-0.5 ml-4 mb-6">
+                  <h4 class="text-white font-semibold text-lg lg:text-2xl">
+                    Internship as QA engineer
+                    <span class="font-normal">at</span>
+                    <a
+                      target="_blank"
+                      class="link link-underline"
+                      href="https://oneclicklca.com/"
+                      >One Click LCA</a
+                    >
+                  </h4>
+                  <h5 class="text-gray-300 text-lg mb-1.5">
+                    A.I applied to real estate
+                  </h5>
+                </div>
+              </li>
 
-      <div class="section ">
-        <div class="px-6 lg:px-32 lg:py-12 cursor-default ">
-
-          <h1
-            class="text-2xl lg:text-4xl text-center uppercase font-light tracking-[0.1em] text-shadow-md text-white/90">
-            Education
-          </h1>
-          <ol class="border-l border-gray-300 mt-8 lg:mt-20 py-4 xl:py-12">
-
-
-            <li>
-              <div class="flex flex-start items-center pt-4">
-                <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
-                <p class="text-white text-sm font-bold ">2026</p>
-              </div>
-              <div class="mt-0.5 ml-4 mb-6">
-                <h4 class="text-white text-lg lg:text-2xl ">Master in Computer Science and Applied Mathematics <span
-                    class="font-light text-base lg:text-xl">(Diplôme d'ingénieur)</span></h4>
-                <a class="text-gray-300 text-base mb-1.5 " href="https://ensimag.grenoble-inp.fr/"
-                  target="_blank">ENSIMAG</a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="flex flex-start items-center pt-4 lg:pt-14">
-                <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
-                <p class="text-white text-sm font-bold ">2023</p>
-              </div>
-              <div class="mt-0.5 ml-4 mb-6">
-                <h4 class="text-white text-lg lg:text-2xl ">Bachelor in Computer Science</h4>
-                <a class="text-gray-300 text-base mb-1.5" href="https://iutparis-seine.u-paris.fr/" target="_blank">
-                  University of Paris Descartes</a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="flex flex-start items-center pt-4 lg:pt-14">
-                <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
-                <p class="text-white text-sm font-bold ">2021</p>
-              </div>
-              <div class="mt-0.5 ml-4 lg:mb-6">
-                <h4 class="text-white text-lg lg:text-2xl ">French A Level - <span class="break-normal">High school
-                    diploma</span> <span class="font-light text-base lg:text-xl ">(Baccalauréat / Abitur)</span></h4>
-                <h5 class="text-gray-300 text-base mb-1.5 ">Lycée Leonard de Vincci in Levallois </h5>
-
-              </div>
-            </li>
-          </ol>
+              <li>
+                <div class="flex flex-start items-center pt-4 lg:pt-14">
+                  <div
+                    class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"
+                  ></div>
+                  <p class="text-white text-sm">Summer 2022</p>
+                </div>
+                <div class="mt-0.5 ml-4 mb-6">
+                  <h4 class="text-white font-semibold text-lg lg:text-2xl">
+                    Receptionist <span class="font-normal">at the</span>
+                    <a
+                      class="link link-underline"
+                      target="_blank"
+                      href="https://www.marriott.fr/hotels/travel/parmd-le-meridien-etoile/"
+                    >
+                      Méridien Etoile</a
+                    >
+                  </h4>
+                  <h5 class="text-gray-300 text-lg mb-1.5">
+                    4-star hotel in Paris
+                  </h5>
+                </div>
+              </li>
+            </ol>
+          </div>
         </div>
-      </div>
 
-      <!-- Experience -->
-      <div class="section  ">
-        <div class="px-6 lg:px-32 lg:py-12 cursor-default text-white">
-
-          <h1
-            class="text-2xl lg:text-4xl text-center uppercase font-light tracking-[0.1em] text-shadow-md text-white/90">
-            Experience
-          </h1>
-
-          <ol class="border-l border-gray-300 mt-8 lg:mt-20 py-4 xl:py-10">
-
-            <li>
-              <div class="flex flex-start items-center pt-4 lg:pt-14">
-                <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
-                <p class="text-white text-sm  ">September 2023 - September 2026</p>
-              </div>
-              <div class="mt-0.5 ml-4 mb-6">
-                <h4 class="text-white font-semibold text-lg lg:text-2xl ">Cyber Security engineer <span
-                    class="font-normal">at</span> <a target="_blank" class=" link link-underline"
-                    href="https://www.mobility.siemens.com/global/en.html">Siemens Mobility</a> <span
-                    class="font-light text-white/80 text-md">as Work-study trainee</span></h4>
-                <h5 class="text-gray-300 text-lg mb-1.5 "> CBTC system </h5>
-
-              </div>
-            </li>
-
-
-            <li>
-              <div class="flex flex-start items-center pt-4 lg:pt-14">
-                <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
-                <p class="text-white text-sm  ">April 2023 - July 2023</p>
-              </div>
-              <div class="mt-0.5 ml-4 mb-6">
-                <h4 class="text-white font-semibold text-lg lg:text-2xl ">Internship as QA engineer <span
-                    class="font-normal">at</span> <a target="_blank" class=" link link-underline"
-                    href="https://oneclicklca.com/">One Click LCA</a></h4>
-                <h5 class="text-gray-300 text-lg mb-1.5 ">A.I applied to real estate </h5>
-
-              </div>
-            </li>
-
-
-            <li>
-              <div class="flex flex-start items-center pt-4 lg:pt-14">
-                <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
-                <p class="text-white text-sm  ">Summer 2022</p>
-              </div>
-              <div class="mt-0.5 ml-4 mb-6">
-                <h4 class="text-white font-semibold text-lg lg:text-2xl ">Receptionist <span class="font-normal">at
-                    the</span> <a class=" link link-underline" target="_blank"
-                    href="https://www.marriott.fr/hotels/travel/parmd-le-meridien-etoile/"> Méridien
-                    Etoile</a>
-                </h4>
-                <h5 class="text-gray-300 text-lg mb-1.5 ">4-star hotel in Paris </h5>
-
-              </div>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-
-      <!--Hard skills-->
-      <div class="section">
-        <div class="w-full min-h-screen">
-          <h1
-            class="text-2xl lg:text-4xl text-center uppercase font-light tracking-[0.1em] text-shadow-md text-white/90 pt-24">
-            Hard skills
-          </h1>
-          <div class="absolute left-10 bottom-20  ">
+        <!--Hard skills-->
+        <div class="section">
+          <div class="w-full min-h-screen relative">
+            <h1
+              class="text-2xl lg:text-4xl text-center uppercase font-light tracking-widest text-shadow-md text-white/90 pt-24"
+            >
+              Hard skills
+            </h1>
             <!-- SE -->
-            <div
-              class="w-full  flex flex-col  cursor-pointer px-4  border border-white/40 backdrop-saturate-0  text-center text-xs  lg:text-sm   border-white group overflow-hidden">
-              <h1 class="py-8 lg:py-8 uppercase group text-lg tracking-widest overflow-hidden ">software engineering
-              </h1>
 
-              <!-- ITEM -->
-              <div class=" overflow-hidden px-2 transition-all duration-300 ">
-
-                <table class="w-full text-xs md:text-sm text-left border-collapse ">
-
-                  <!-- HEADER -->
-                  <thead>
-                    <tr class="border-b border-white/20">
-                      <th class="py-2 uppercase font-normal">Programming Language</th>
-                      <th class="py-2 uppercase font-normal text-right">Proficiency</th>
-                    </tr>
-                  </thead>
-
-                  <!-- BODY -->
-                  <tbody class="text-white/80">
-                    <tr class="border-b border-white/10">
-                      <td class="py-2">C</td>
-                      <td class="py-2 text-right">★★★★☆</td>
-                    </tr>
-
-                    <tr class="border-b border-white/10">
-                      <td class="py-2">Java</td>
-                      <td class="py-2 text-right">★★★★☆</td>
-                    </tr>
-
-                    <tr class="border-b border-white/10">
-                      <td class="py-2">Python</td>
-                      <td class="py-2 text-right">★★★★☆</td>
-                    </tr>
-
-                    <tr>
-                      <td class="py-2">React</td>
-                      <td class="py-2 text-right">★★★☆☆</td>
-                    </tr>
-
-                  </tbody>
-                </table>
-
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-
-      <!-- Projects-->
-      <div class="section  ">
-
-        <!--Arrows-->
-
-        <button class="arrow arrow-l">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70px" height="80px"
-            viewBox="0 0 50 80" xml:space="preserve">
-            <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-              points="
-            45.63,75.8 0.375,38.087 45.63,0.375 ">
-            </polyline>
-          </svg>
-        </button>
-
-        <button class="arrow arrow-r">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70px" height="80px"
-            viewBox="0 0 50 80" xml:space="preserve">
-            <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-              points="
-            0.375,0.375 45.63,38.087 0.375,75.8 ">
-            </polyline>
-          </svg>
-        </button>
-
-
-        <div class="slide ">
-          <div class="space-y-4 px-16">
-            <h1 class=" text-xl lg:text-3xl font-light text-center uppercase">Projects</h1>
-            <p class="font-light text-justify md:text-center text-normal lg:text-lg">You can find here some projects I
-              have been working on lately and some technical information.</p>
-          </div>
-
-        </div>
-
-        <div class="slide w-full fp-auto-height-responsive">
-
-
-          <div class=" flex  justify-center items-center overflow-hidden w-full ">
-            <div>
+            <div class="absolute left-10 bottom-20 group">
               <div
-                class=" p-16 hover:scale-105 transition ease-in-out hover:shadow-lg hover:cursor-pointer delay-50 duration-300 fp-auto-height-responsive">
-                <div class="space-y-4 lg:space-y-8">
-                  <div class="space-y-6 lg:space-y-12">
-                    <h1
-                      class="uppercase text-center text-xl lg:text-2xl transition ease-in-out font-light delay-50 duration-250  ">
-                      Hungry
-                    </h1>
+                class="relative z-10 w-full group-hover:shadow-[8px_8px_0_rgba(255,255,255,0.05)] flex flex-col border border-white/20 px-8 py-8 transition-all duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1"
+              >
+                <h1
+                  class="uppercase group text-lg tracking-widest overflow-hidden mb-4 text-center"
+                >
+                  software engineering
+                </h1>
 
+                <!-- ITEM -->
+                <div class="overflow-hidden transition-all duration-300">
+                  <table class="w-full text-xs md:text-sm text-left">
+                    <!-- HEADER -->
+                    <thead>
+                      <tr class="border-b border-white/20">
+                        <th class="py-2 pr-8 uppercase font-normal">
+                          Programming Language
+                        </th>
+                        <th class="py-2 pl-8 uppercase font-normal text-right">
+                          Proficiency
+                        </th>
+                      </tr>
+                    </thead>
 
-                    <p class="text-justify font-light text-sm lg:text-lg">Server and client application for libraries
-                      which allow them to manage reservations of books and documents
-                    </p>
-                  </div>
-                  <div class="space-y-2">
-                    <div class="w-full lang-section space-y-2">
-                    </div>
-                    <div class="space-y-2 ">
-                      <div class="text-right">
-                        <a class="font-light text-sm lg:text-base link link-underline github-link" target="_blank"
-                          href="https://github.com/LaCarteAllemande/LibraryServer">Check the code on
-                          Github</a> <i class='fas fa-external-link-alt'></i>
-                      </div>
+                    <!-- BODY -->
+                    <tbody class="text-white/80">
+                      <tr class="border-b border-white/10">
+                        <td class="py-2">C</td>
+                        <td class="py-2 text-right">
+                          <div class="flex justify-end gap-1">
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span
+                              class="w-2 h-2 bg-white/20 rounded-full"
+                            ></span>
+                          </div>
+                        </td>
+                      </tr>
 
+                      <tr class="border-b border-white/10">
+                        <td class="py-2">Java</td>
+                        <td class="py-2 text-right">
+                          <div class="flex justify-end gap-1">
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span
+                              class="w-2 h-2 bg-white/20 rounded-full"
+                            ></span>
+                          </div>
+                        </td>
+                      </tr>
 
-                    </div>
-                  </div>
+                      <tr class="border-b border-white/10">
+                        <td class="py-2">Python</td>
+                        <td class="py-2 text-right">
+                          <div class="flex justify-end gap-1">
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span
+                              class="w-2 h-2 bg-white/20 rounded-full"
+                            ></span>
+                          </div>
+                        </td>
+                      </tr>
 
+                      <tr>
+                        <td class="py-2">React</td>
+                        <td class="py-2 text-right">
+                          <div class="flex justify-end gap-1">
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
 
+                            <span
+                              class="w-2 h-2 bg-white/20 rounded-full"
+                            ></span>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- cyber -->
+            <div class="absolute left-300 bottom-20 group">
+              <div
+                class="transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 border border-white/20 w-96 px-8 py-8 space-y-2 group-hover:shadow-[-8px_8px_0px_rgba(255,255,255,0.15)]"
+              >
+                <!-- TITLE -->
+                <h1 class="uppercase text-lg tracking-widest text-center mb-2">
+                  Cyber security
+                </h1>
+
+                <!-- SECTION -->
+                <div class="pt-3 border-t border-white/20 space-y-2">
+                  <h2 class="uppercase font-light text-sm text-white/90">
+                    Infrastructure security
+                  </h2>
+                  <ul
+                    class="text-white/70 uppercase font-light text-xs space-y-1 pl-2"
+                  >
+                    <li>PKI</li>
+                    <li>LDAP</li>
+                  </ul>
                 </div>
 
+                <div class="pt-2 border-t border-white/20 space-y-2">
+                  <h2 class="uppercase font-light text-sm text-white/90">
+                    Network security
+                  </h2>
+                  <ul
+                    class="text-white/70 uppercase font-light text-xs space-y-1 pl-2"
+                  >
+                    <li>802.1X</li>
+                    <li>IPSEC</li>
+                  </ul>
+                </div>
 
+                <div class="pt-3 border-t border-white/20 space-y-2">
+                  <h2 class="uppercase font-light text-sm text-white/90">
+                    Operating system
+                  </h2>
+                  <ul
+                    class="text-white/70 uppercase font-light text-xs space-y-1 pl-2"
+                  >
+                    <li>Secure Boot</li>
+                    <li>Linux Security</li>
+                  </ul>
+                </div>
+
+                <div class="pt-3 border-t border-white/20 space-y-2">
+                  <h2 class="uppercase font-light text-sm text-white/90">
+                    Hardware security
+                  </h2>
+                  <ul
+                    class="text-white/70 uppercase font-light text-xs space-y-1 pl-2"
+                  >
+                    <li>TPM 2.0</li>
+                    <li>CPU Measurement</li>
+                  </ul>
+                </div>
               </div>
             </div>
 
+            <!-- data -->
+            <div class="absolute left-150 bottom-130 group">
+              <div
+                class="transition-all duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1 border border-white/20 w-96 px-8 py-8 space-y-2 group-hover:shadow-[8px_8px_0px_rgba(255,255,255,0.1)]"
+              >
+                <!-- TITLE -->
+                <h1 class="uppercase text-lg tracking-widest text-center mb-2">
+                  data
+                </h1>
+
+                <div class="overflow-hidden transition-all duration-300">
+                  <table class="w-full text-xs md:text-sm text-left">
+                    <!-- HEADER -->
+                    <thead>
+                      <tr class="border-b border-white/20">
+                        <th class="py-2 pr-8 uppercase font-normal">
+                          Framework
+                        </th>
+                        <th class="py-2 pl-8 uppercase font-normal text-right">
+                          Proficiency
+                        </th>
+                      </tr>
+                    </thead>
+
+                    <!-- BODY -->
+                    <tbody class="text-white/80">
+                      <tr class="border-b border-white/10">
+                        <td class="py-2">RStudio</td>
+                        <td class="py-2 text-right">
+                          <div class="flex justify-end gap-1">
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span
+                              class="w-2 h-2 bg-white/20 rounded-full"
+                            ></span>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr class="border-b border-white/10">
+                        <td class="py-2">Matplotlib</td>
+                        <td class="py-2 text-right">
+                          <div class="flex justify-end gap-1">
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                            <span
+                              class="w-2 h-2 bg-white/20 rounded-full"
+                            ></span>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="slide w-full fp-auto-height-responsive">
-          <div class=" flex  justify-center items-center overflow-hidden w-full fp-auto-height-responsive">
-            <div>
-              <div
-                class=" p-16 hover:scale-105 transition ease-in-out hover:shadow-lg hover:cursor-pointer delay-50 duration-300 h-full">
-                <div class="space-y-4 lg:space-y-8">
-                  <div class="space-y-6 lg:space-y-12">
+        <!-- Projects-->
+        <div class="section">
+          <!--Arrows-->
 
-                    <div class="space-y-2">
+          <button class="arrow arrow-l">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="50px"
+              height="60px"
+              viewBox="0 0 50 80"
+              xml:space="preserve"
+            >
+              <polyline
+                fill="none"
+                stroke="#FFFFFF"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                points="
+            45.63,75.8 0.375,38.087 45.63,0.375 "
+              ></polyline>
+            </svg>
+          </button>
+
+          <button class="arrow arrow-r">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="50px"
+              height="60px"
+              viewBox="0 0 50 80"
+              xml:space="preserve"
+            >
+              <polyline
+                fill="none"
+                stroke="#FFFFFF"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                points="
+            0.375,0.375 45.63,38.087 0.375,75.8 "
+              ></polyline>
+            </svg>
+          </button>
+                    <div class="slide w-full h-full fp-auto-height-responsive">
+            <div
+              class="h-full flex justify-center items-center m-36 relative z-0"
+            >
+              <div
+                class="w-full backdrop-blur-[1px] p-10 lg:p-14 h-full border-double border-8 border-white/60 hover:scale-[1.03] transition-all duration-300 ease-out cursor-pointer flex justify-center items-center"
+              >
+                <div class="space-y-10">
+                  <!-- TITLE -->
+                  <div class="space-y-4">
+                    <div class="pb-16">
                       <h1
-                        class="uppercase text-center text-xl lg:text-2xl transition ease-in-out font-light delay-50 duration-250  ">
+                        class="uppercase text-center text-xl lg:text-2xl font-light tracking-widest"
+                      >
+                        AI Automotive UI Builder
+                      </h1>
+                      <span
+                        class="text-xs text-center uppercase tracking-widest font-light px-3 py-1 border border-white/40 text-white/70"
+                      >
+                        Done
+                      </span>
+                    </div>
+
+                    <p
+                      class="text-white/70 text-sm lg:text-base leading-relaxed text-justify"
+                    >
+                      Web-based interface generator designed for automotive
+                      dashboards. It leverages a large language model via
+                      OpenRouter to dynamically generate UI layouts from natural
+                      language prompts, allowing rapid prototyping of in-car
+                      interfaces without manual coding. The project is built
+                      with Vite, Tailwind CSS for styling and Supabase for
+                      backend services including layout storage.
+                    </p>
+                  </div>
+
+                  <!-- LANGUAGE BARS -->
+                  <div class="space-y-4">
+                    <!-- JS -->
+                    <div class="space-y-1">
+                      <div class="flex justify-between text-xs text-white/60">
+                        <span>React/Vite</span>
+                        <span>50%</span>
+                      </div>
+                      <div
+                        class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden"
+                      >
+                        <div
+                          class="h-full bg-white/80 rounded-full"
+                          style="width: 50%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="space-y-1">
+                      <div class="flex justify-between text-xs text-white/60">
+                        <span>TypeScript</span>
+                        <span>45%</span>
+                      </div>
+                      <div
+                        class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden"
+                      >
+                        <div
+                          class="h-full bg-white/80 rounded-full"
+                          style="width: 45%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="space-y-1">
+                      <div class="flex justify-between text-xs text-white/60">
+                        <span>SQL</span>
+                        <span>5%</span>
+                      </div>
+                      <div
+                        class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden"
+                      >
+                        <div
+                          class="h-full bg-white/80 rounded-full"
+                          style="width: 5%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- LINK -->
+                  <div class="pt-4 flex justify-end">
+                    <a
+                      class="text-sm font-light text-white/70 hover:text-white transition flex items-center gap-2"
+                      target="_blank"
+                      href="https://github.com/LaCarteAllemande/Automotive-UI-Builder"
+                    >
+                      Check GitHub
+                      <span>↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide w-full h-full fp-auto-height-responsive">
+            <div
+              class="h-full flex justify-center items-center m-36 relative z-0"
+            >
+              <div
+                class="w-full backdrop-blur-[1px] p-10 lg:p-14 h-full border-double border-8 border-white/60 hover:scale-[1.03] transition-all duration-300 ease-out cursor-pointer flex justify-center items-center"
+              >
+                <div class="space-y-10">
+                  <!-- TITLE -->
+                  <div class="space-y-4">
+                    <div class="pb-16">
+                      <h1
+                        class="uppercase text-center text-xl lg:text-2xl font-light tracking-widest"
+                      >
+                        WikiChrono
+                      </h1>
+                      <span
+                        class="text-xs text-center uppercase tracking-widest font-light px-3 py-1 border border-white/40 text-white/70"
+                      >
+                        In progress
+                      </span>
+                    </div>
+
+                    <p
+                      class="text-white/70 text-sm lg:text-base leading-relaxed text-justify"
+                    >
+                      This project is an interactive art-based game developed
+                      using React for the frontend and Express for the backend.
+                      The concept challenges players to place paintings in
+                      chronological or thematic order. All paintings are sourced
+                      from Wikipedia. This project combines my interest in art
+                      and software development.
+                    </p>
+                  </div>
+
+                  <!-- LANGUAGE BARS -->
+                  <div class="space-y-4">
+                    <!-- JS -->
+                    <div class="space-y-1">
+                      <div class="flex justify-between text-xs text-white/60">
+                        <span>React</span>
+                        <span>60%</span>
+                      </div>
+                      <div
+                        class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden"
+                      >
+                        <div
+                          class="h-full bg-white/80 rounded-full"
+                          style="width: 60%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="space-y-1">
+                      <div class="flex justify-between text-xs text-white/60">
+                        <span>JS</span>
+                        <span>40%</span>
+                      </div>
+                      <div
+                        class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden"
+                      >
+                        <div
+                          class="h-full bg-white/80 rounded-full"
+                          style="width: 40%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- LINK -->
+                  <div class="pt-4 flex justify-end">
+                    <a
+                      class="text-sm font-light text-white/70 hover:text-white transition flex items-center gap-2"
+                      target="_blank"
+                      href="https://github.com/LaCarteAllemande/LibraryServer"
+                    >
+                      Check GitHub
+                      <span>↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide w-full h-full fp-auto-height-responsive">
+            <div
+              class="h-full flex justify-center items-center m-36 relative z-0"
+            >
+              <div
+                class="w-full backdrop-blur-[1px] p-10 lg:p-14 h-full border-double border-8 border-white/60 hover:scale-[1.03] transition-all duration-300 ease-out cursor-pointer flex justify-center items-center"
+              >
+                <div class="space-y-10">
+                  <!-- TITLE -->
+                  <div class="space-y-4">
+                    <div class="pb-16">
+                      <h1
+                        class="uppercase text-center text-xl lg:text-2xl font-light tracking-widest"
+                      >
                         trading bot
                       </h1>
-
-                      <h2 class="text-center uppercase font-semibold">Python</h2>
+                      <span
+                        class="text-xs text-center uppercase tracking-widest font-light px-3 py-1 border border-white/40 text-white/70"
+                      >
+                        Paused
+                      </span>
                     </div>
 
-
-
-                    <p class="text-justify font-light text-sm lg:text-lg">Cryptocurrency trading bot which uses
-                      Binance's API and the <span class="font-semibold">CCXT</span> library.
+                    <p
+                      class="text-white/70 text-sm lg:text-base leading-relaxed text-justify"
+                    >
+                      Cryptocurrency trading bot based on Binance's API and
+                      the <span class="font-semibold">CCXT</span> library.
                     </p>
                   </div>
-                </div>
 
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-        <div class="slide w-full fp-auto-height-responsive">
-
-
-          <div class=" flex  justify-center items-center overflow-hidden w-full fp-auto-height-responsive">
-            <div>
-              <div
-                class=" p-16 hover:scale-105 transition ease-in-out hover:shadow-lg hover:cursor-pointer delay-50 duration-300 h-full">
-                <div class="space-y-4 lg:space-y-8">
-                  <div class="space-y-6 lg:space-y-12">
-                    <h1
-                      class="uppercase text-center text-xl lg:text-2xl transition ease-in-out font-light delay-50 duration-250  ">
-                      Library Server
-                    </h1>
-
-
-                    <p class="text-justify font-light text-sm lg:text-lg">Server and client application for a library
-                      which allow to manage reservations of books and documents
-                    </p>
-                  </div>
-                  <div class="space-y-2">
-                    <div class="w-full lang-section space-y-2">
-                    </div>
-                    <div class="space-y-2 ">
-                      <div class="text-right">
-                        <a class="font-light text-sm lg:text-base link link-underline github-link" target="_blank"
-                          href="https://github.com/LaCarteAllemande/LibraryServer">Check the code on
-                          Github</a> <i class='fas fa-external-link-alt'></i>
+                  <!-- LANGUAGE BARS -->
+                  <div class="space-y-4">
+                    <!-- JS -->
+                    <div class="space-y-1">
+                      <div class="flex justify-between text-xs text-white/60">
+                        <span>Python</span>
+                        <span>100%</span>
                       </div>
-
-
-                    </div>
-                  </div>
-
-
-                </div>
-
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-        <div class="slide w-full fp-auto-height-responsive">
-
-
-          <div class=" flex  justify-center items-center overflow-hidden w-full fp-auto-height-responsive">
-            <div>
-              <div
-                class=" p-16 hover:scale-105 transition ease-in-out hover:shadow-lg hover:cursor-pointer delay-50 duration-300 h-full">
-                <div class="space-y-4 lg:space-y-8">
-                  <div class="space-y-6 lg:space-y-12">
-                    <h1
-                      class="uppercase text-center text-xl lg:text-2xl transition ease-in-out font-light delay-50 duration-250  ">
-                      Criel-sur-mer
-                    </h1>
-
-
-                    <p class="text-justify font-light text-sm lg:text-lg">Rework of the website of a small town for a
-                      university project with the <span class="font-semibold">Tailwind</span> framework.
-                    </p>
-                  </div>
-                  <div class="space-y-2">
-                    <div class="w-full lang-section space-y-2">
-                    </div>
-                    <div class="space-y-2 ">
-                      <div class="text-right">
-                        <a class="font-light text-sm lg:text-base link link-underline github-link" target="_blank"
-                          href="https://github.com/stoptexting/criel-sur-mer-website-rework">Check the code on
-                          Github</a> <i class='fas fa-external-link-alt'></i>
+                      <div
+                        class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden"
+                      >
+                        <div
+                          class="h-full bg-white/80 rounded-full"
+                          style="width: 100%"
+                        ></div>
                       </div>
-
-
                     </div>
                   </div>
-
-
                 </div>
-
-
               </div>
             </div>
-
           </div>
-        </div>
 
 
-        <div class="slide w-full fp-auto-height-responsive">
-          <div class=" flex  justify-center items-center overflow-hidden w-full fp-auto-height-responsive">
-            <div>
+          <div class="slide w-full h-full fp-auto-height-responsive">
+            <div
+              class="h-full flex justify-center items-center m-36 relative z-0"
+            >
               <div
-                class=" p-16 hover:scale-105 transition ease-in-out hover:shadow-lg hover:cursor-pointer delay-50 duration-300 h-full">
-                <div class="space-y-4 lg:space-y-8">
-                  <div class="space-y-6 lg:space-y-12">
-
-                    <div class="space-y-2">
+                class="w-full backdrop-blur-[1px] p-10 lg:p-14 h-full border-double border-8 border-white/60 hover:scale-[1.03] transition-all duration-300 ease-out cursor-pointer flex justify-center items-center"
+              >
+                <div class="space-y-10">
+                  <!-- TITLE -->
+                  <div class="space-y-4">
+                    <div class="pb-16">
                       <h1
-                        class="uppercase text-center text-xl lg:text-2xl transition ease-in-out font-light delay-50 duration-250  ">
-                        Bach
+                        class="uppercase text-center text-xl lg:text-2xl font-light tracking-widest"
+                      >
+                        Library Server
                       </h1>
-
-                      <h2 class="text-center uppercase font-semibold">Java</h2>
+                      <span
+                        class="text-xs text-center uppercase tracking-widest font-light px-3 py-1 border border-white/40 text-white/70"
+                      >
+                        Done
+                      </span>
                     </div>
 
-
-
-                    <p class="text-justify font-light text-sm lg:text-lg">Musical chord progression generator.
+                    <p
+                      class="text-white/70 text-sm lg:text-base leading-relaxed text-justify"
+                    >
+                  Pedagogic Library Server written in Java, designed as a learning-focused project that emphasizes high-quality and maintainable code. 
+                  The project showcases the use of several design patterns and runtime class generation using Java Reflection.
                     </p>
                   </div>
-                </div>
 
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="slide w-full fp-auto-height-responsive">
-
-
-
-          <div class=" flex  justify-center items-center overflow-hidden w-full fp-auto-height-responsive">
-            <div>
-              <div
-                class=" p-16 hover:scale-105 transition ease-in-out hover:shadow-lg hover:cursor-pointer delay-50 duration-300 h-full">
-                <div class="space-y-4 lg:space-y-8">
-                  <div class="space-y-6 lg:space-y-12">
-                    <h1
-                      class="uppercase text-center text-xl lg:text-2xl transition ease-in-out font-light delay-50 duration-250  ">
-                      sampl
-                    </h1>
-
-
-                    <p class="text-justify font-light text-sm lg:text-lg">Desktop application with a GUI intended
-                      for music producers to download the audio of a Youtube video.
-                    </p>
-                  </div>
-                  <div class="space-y-2">
-                    <div class="w-full lang-section space-y-2">
-                    </div>
-                    <div class="space-y-2 ">
-                      <div class="text-right">
-                        <a class="font-light text-sm lg:text-base link link-underline github-link" target="_blank"
-                          href="https://github.com/LaCarteAllemande/Sampl">Check the code on
-                          Github</a> <i class='fas fa-external-link-alt'></i>
+                  <!-- LANGUAGE BARS -->
+                  <div class="space-y-4">
+                    <!-- JS -->
+                    <div class="space-y-1">
+                      <div class="flex justify-between text-xs text-white/60">
+                        <span>Java</span>
+                        <span>100%</span>
                       </div>
+                      <div
+                        class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden"
+                      >
+                        <div
+                          class="h-full bg-white/80 rounded-full"
+                          style="width: 100%"
+                        ></div>
+                      </div>
+                    </div>
 
+                  </div>
 
+                  <!-- LINK -->
+                  <div class="pt-4 flex justify-end">
+                    <a
+                      class="text-sm font-light text-white/70 hover:text-white transition flex items-center gap-2"
+                      target="_blank"
+                      href="https://github.com/LaCarteAllemande/LibraryServer"
+                    >
+                      Check GitHub
+                      <span>↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!--Soft skills-->
+        <div class="section overflow-hidden h-full" id="soft-skills">
+          <div class="grid grid-cols-3 w-full overflow-hidden min-h-full">
+            <div
+              class="z-30 overflow-hidden group hover:cursor-default scale-100 hover:backdrop-brightness-110 transition ease-in-out delay-50 duration-250"
+            >
+              <div class="flex items-center justify-center w-full h-full">
+                <div class="lg:space-y-6 space-y-2 w-full">
+                  <h2
+                    class="uppercase text-center font-light lg:text-2xl transition ease-in-out delay-50 duration-250"
+                  >
+                    langages
+                  </h2>
+                  <div
+                    class="lg:grid lg:grid-cols-3 w-full space-y-1 lg:space-y-0"
+                  >
+                    <div
+                      class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-150 space-y-0 relative"
+                    >
+                      <h2
+                        class="uppercase font-light text-center text-xs lg:text-lg"
+                      >
+                        french
+                      </h2>
+                      <div
+                        class="lg:flex absolute hidden w-full mt-2 justify-center items-center font-thin hover:cursor-pointer"
+                      >
+                        <h3 class="border border-white/50 p-1">C2</h3>
+                      </div>
+                    </div>
+                    <div
+                      class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-500 space-y-0 relative"
+                    >
+                      <h2
+                        class="uppercase font-light text-center text-xs lg:text-lg"
+                      >
+                        english
+                      </h2>
+                      <div
+                        class="lg:flex absolute hidden w-full mt-2 justify-center items-center font-thin hover:cursor-pointer"
+                      >
+                        <h3 class="border border-white/50 p-1">C2</h3>
+                      </div>
+                    </div>
+
+                    <div
+                      class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-1000 space-y-0 relative"
+                    >
+                      <h2
+                        class="uppercase font-light text-center text-xs lg:text-lg"
+                      >
+                        german
+                      </h2>
+                      <div
+                        class="lg:flex absolute hidden w-full mt-2 justify-center items-center font-thin hover:cursor-pointer"
+                      >
+                        <h3 class="border border-white/50 p-1">C1</h3>
+                      </div>
                     </div>
                   </div>
-
-
                 </div>
-
-
               </div>
             </div>
 
+            <div
+              class="z-0 overflow-hidden backdrop-saturate-75 group hover:cursor-default scale-100 hover:backdrop-brightness-110 transition ease-in-out delay-50 duration-250"
+            >
+              <div class="flex items-center justify-center w-full h-full">
+                <div class="lg:space-y-6 space-y-2 w-full">
+                  <h2
+                    class="uppercase text-center font-light lg:text-2xl transition ease-in-out delay-50 duration-250"
+                  >
+                    soft-skills
+                  </h2>
+                  <div
+                    class="lg:grid lg:grid-cols-3 w-full space-y-1 lg:space-y-0"
+                  >
+                    <div
+                      class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-150 space-y-0"
+                    >
+                      <h2
+                        class="uppercase font-light text-center text-xs lg:text-lg"
+                      >
+                        hardworking
+                      </h2>
+                    </div>
+                    <div
+                      class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-500"
+                    >
+                      <h2
+                        class="uppercase font-light text-center text-xs lg:text-lg"
+                      >
+                        Versatile
+                      </h2>
+                    </div>
+
+                    <div
+                      class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-1000"
+                    >
+                      <h2
+                        class="uppercase font-light text-center text-xs lg:text-lg"
+                      >
+                        rigorous
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="overflow-hidden backdrop-sepia group hover:cursor-default scale-100 hover:backdrop-brightness-110 transition ease-in-out delay-50 duration-250"
+            >
+              <div class="flex items-center justify-center w-full h-full">
+                <div class="lg:space-y-6 space-y-2 w-full">
+                  <h2
+                    class="uppercase text-center font-light lg:text-2xl transition ease-in-out delay-50 duration-250"
+                  >
+                    passions
+                  </h2>
+                  <div
+                    class="lg:grid lg:grid-cols-3 w-full space-y-1 lg:space-y-0"
+                  >
+                    <div
+                      class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-150 space-y-0"
+                    >
+                      <h2
+                        class="uppercase font-light text-center text-xs lg:text-lg"
+                      >
+                        music
+                      </h2>
+                    </div>
+                    <div
+                      class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-500"
+                    >
+                      <h2
+                        class="uppercase font-light text-center text-xs lg:text-lg"
+                      >
+                        paintings
+                      </h2>
+                    </div>
+
+                    <div
+                      class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-1000"
+                    >
+                      <h2
+                        class="uppercase font-light text-center text-xs lg:text-lg"
+                      >
+                        Calisthenics
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
+        <div class="section fp-auto-height">
+          <footer
+            class="border-t border-white/40 backdrop-brightness-50 backdrop-grayscale text-white py-12 flex justify-center items-center"
+          >
+            <div class="space-y-4">
+              <div class="flex items-center justify-center">
+                <a
+                  target="_blank"
+                  href="mailto:nmittel [at] protonmail.com"
+                  onclick="this.href='mailto:nmittel@protonmail.com'"
+                  class="mr-6 text-white inline-block"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                    />
+                  </svg>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/nils-mittelhockamp-475a27237/"
+                  class="mr-6 text-white inline-block"
+                >
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="linkedin-in"
+                    class="w-3.5"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                    ></path>
+                  </svg>
+                </a>
 
-
-      </div>
-
-
-
-
-
-      <!--Soft skills-->
-      <div class="section overflow-hidden h-full" id="soft-skills">
-
-
-        <div class="grid grid-cols-3 gap-1 lg:gap-4 w-full overflow-hidden  min-h-full ">
-
-
-          <div
-            class="z-30 overflow-hidden group hover:cursor-default  scale-100 hover:scale-105  hover:backdrop-brightness-105 transition ease-in-out  delay-50 duration-250">
-            <div class="flex items-center justify-center w-full h-full">
-              <div class="lg:space-y-6 space-y-2 w-full ">
-                <h2 class="uppercase text-center font-light lg:text-2xl transition ease-in-out  delay-50 duration-250 ">
-                  langages</h2>
-                <div class="lg:grid lg:grid-cols-3 w-full space-y-1 lg:space-y-0">
-                  <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-150 space-y-0  ">
-                    <h2 class="uppercase font-light text-center text-xs lg:text-lg">french <span
-                        class="lg:inline lg:ml-1 hidden border border-white font-thin p-1 hover:cursor-pointer"> C2
-                      </span> </h2>
-                  </div>
-                  <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-500">
-                    <h2 class="uppercase font-light text-center text-xs lg:text-lg">English <span
-                        class="lg:inline lg:ml-1 hidden border border-white font-thin p-1 hover:cursor-pointer "> C2
-                      </span> </h2>
-                  </div>
-
-                  <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-1000">
-                    <h2 class="uppercase font-light text-center text-xs lg:text-lg">German <span
-                        class="lg:inline lg:ml-1 hidden border border-white font-thin p-1 hover:cursor-pointer"> C1
-                      </span></h2>
-                  </div>
-                </div>
+                <a
+                  target="_blank"
+                  href="https://github.com/LaCarteAllemande?tab=repositories"
+                  class="text-white inline-block"
+                >
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="github"
+                    class="w-4"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    ></path>
+                  </svg>
+                </a>
               </div>
             </div>
-          </div>
-
-          <div
-            class="z-0 overflow-hidden group  hover:cursor-default  scale-100 hover:scale-105  hover:backdrop-brightness-105 transition ease-in-out  delay-50 duration-250">
-            <div class="flex items-center justify-center w-full h-full">
-              <div class="lg:space-y-6 space-y-2 w-full ">
-                <h2 class="uppercase text-center font-light lg:text-2xl transition ease-in-out  delay-50 duration-250 ">
-                  soft-skills</h2>
-                <div class="lg:grid lg:grid-cols-3 w-full space-y-1 lg:space-y-0">
-                  <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-150 space-y-0">
-                    <h2 class="uppercase font-light text-center text-xs lg:text-lg">Teamwork</h2>
-                  </div>
-                  <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-500">
-                    <h2 class="uppercase font-light text-center text-xs lg:text-lg">Versatile</h2>
-                  </div>
-
-                  <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-1000">
-                    <h2 class="uppercase font-light text-center text-xs lg:text-lg">rigorous</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="overflow-hidden group hover:cursor-default  scale-100 hover:scale-105  hover:backdrop-brightness-105 transition ease-in-out  delay-50 duration-250">
-            <div class="flex items-center justify-center w-full h-full">
-              <div class="lg:space-y-6 space-y-2 w-full ">
-                <h2
-                  class="uppercase text-center font-light lg:text-2xl transition ease-in-out  delay-50 duration-250  ">
-                  passions</h2>
-                <div class="lg:grid lg:grid-cols-3 w-full space-y-1 lg:space-y-0">
-                  <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-150 space-y-0">
-                    <h2 class="uppercase font-light text-center text-xs lg:text-lg">music production</h2>
-                  </div>
-                  <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-500">
-                    <h2 class="uppercase font-light text-center text-xs lg:text-lg">soccer</h2>
-                  </div>
-
-                  <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-1000">
-                    <h2 class="uppercase font-light text-center text-xs lg:text-lg">movies</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+          </footer>
         </div>
-
-
-
-
-
-
       </div>
-      <!--About me -->
-      <div class="section   overflow-hidden justify-normal">
-
-        <div
-          class=" cursor-default xl:py-32 fp-auto-height-responsive w-full flex items-center justify-center overflow-hidden">
-          <div>
-            <h1 class="text-2xl lg:text-4xl font-normal text-center uppercase">About me</h1>
-
-            <p
-              class="font-light lg:text-xl text-justify px-12 lg:px-48 xl:px-96 2xl:mx-48 lg:mt-20 mt-8 tracking-tight ">
-              I'm passionate about technology and in particulay about <span class="font-normal">A.I</span>, <span
-                class="font-normal">Programming</span>, and <span class="font-normal">Cybersecurity</span>. I'm
-              curious about every field in which theses technologies can be useful and
-              beside Computer Science, I have a strong interest in mathematics, in economics and I'm always
-              curious to learn new things.
-              I enjoy making music, working out and learning stuff in my free time.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="section fp-auto-height">
-        <footer class="bg-gradient-to-bl from-black via-[#010104] to-[#030515] text-white py-12">
-          <div class="space-y-4">
-            <div>
-              <h3 class="text-center font-bold text-xl "> - 2023</h3>
-              <h4 class="text-center  text-base "> <span>at</span> protonmail.com</h4>
-            </div>
-
-            <div class="inline-block flex items-center justify-center">
-              <a target="_blank" href="https://www.linkedin.com/in/-475a27237/" class="mr-6 text-white  inline-block">
-                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="w-3.5"
-                  role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path fill="currentColor"
-                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                  </path>
-                </svg>
-              </a>
-
-              <a target="_blank" href="https://github.com/LaCarteAllemande?tab=repositories"
-                class="text-white inline-block">
-                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="w-4" role="img"
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                  <path fill="currentColor"
-                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                  </path>
-                </svg>
-              </a>
-            </div>
-
-          </div>
-        </footer>
-      </div>
-    </div>
-
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>
