@@ -20,6 +20,15 @@
     }
 }
 
+
+.section-title {
+  @apply text-2xl lg:text-4xl text-center uppercase font-light tracking-[0.1em] text-shadow-md text-white/90;
+}
+
+.timeline {
+  @apply flex flex-start items-center pt-4 xl:pt-14
+}
+
 html {
   scroll-behavior: smooth;
 }
