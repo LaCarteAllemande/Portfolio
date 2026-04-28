@@ -28,7 +28,7 @@
   @apply text-2xl xl:text-3xl 2xl:text-4xl text-center uppercase font-light tracking-widest text-shadow-md text-white/90;
 }
 
-.diploma-name {
+.timeline-data-name {
   @apply text-white text-lg md:text-xl 2xl:text-2xl
 }
 
@@ -36,6 +36,21 @@
   @apply font-light text-base 2xl:text-xl
 }
 
+.timeline {
+  @apply border-l border-gray-300 mt-8 2xl:mt-20 py-4 2xl:py-12
+}
+
+.timeline-data {
+  @apply flex  items-center pt-4
+}
+
+.timeline-padding {
+  @apply 2xl:pt-14
+}
+
+.hard-skill-mobile-title {
+  @apply uppercase text-sm  tracking-widest  mb-4 text-center
+}
 
 html {
   scroll-behavior: smooth;
