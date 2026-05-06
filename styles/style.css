@@ -19,7 +19,7 @@
 
 @media (max-width: 	1280px){
   .arrow > svg {
-      width: 40px;
+      width: 30px;
     }
 }
 
@@ -40,7 +40,7 @@
   @apply border-l border-gray-300 mt-8 2xl:mt-20 py-4 2xl:py-12
 }
 
-.timeline-data {
+.timeline-data { 
   @apply flex  items-center pt-4
 }
 
@@ -54,6 +54,51 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.project-div {
+  @apply h-full flex justify-center items-center mx-4 my-12 sm:mx-8 lg:m-24 2xl:m-36 relative z-0
+}
+
+.project-container {
+  @apply w-full max-w-5xl xl:backdrop-blur-[1px] p-6 sm:p-8 2xl:p-14 h-auto lg:h-full lg:border-double lg:border-4 border-white/80 hover:scale-[1.03] transition-all duration-300 ease-out cursor-pointer flex justify-center items-center
+}
+
+.project-title {
+  @apply uppercase text-center text-xl lg:text-2xl font-light tracking-widest
+}
+
+.check-Github{
+  @apply text-xs 2xl:text-sm font-light text-white/70 hover:text-white transition flex items-center gap-2
+}
+
+.project-title-container {
+  @apply 2xl:pb-16 pb-4 space-y-2
+}
+
+.project-space {
+  @apply space-y-6 lg:space-y-8 2xl:space-y-10
+}
+.project-description {
+  @apply text-white/70 text-xs 2xl:text-base  leading-relaxed text-justify
+}
+
+.soft-skill-title {
+  @apply uppercase text-center font-light 2xl:text-2xl transition ease-in-out delay-50 duration-250
+}
+
+.soft-skill {
+  @apply uppercase font-light text-center text-xs xl:text-lg
+}
+
+.language-bar {
+  @apply w-full h-1 2xl:h-1.5 bg-white/10 rounded-full overflow-hidden
+}
+/* hides slides bttons on 2xl */
+@media (min-width: 96rem) {
+  #skills .fp-slidesNav {
+    display: none !important;
+  }
 }
 
 
